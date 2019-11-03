@@ -1,9 +1,27 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Roboto Slab',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+}
+
+ul, li {
+  padding-inline-start: 0;
+}
+hr {
+  border: 0;
+  border-bottom: solid 2px #eeeeee;
+  margin: 3rem 0;
 }
 
 .App-header {
@@ -19,4 +37,20 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.page-description {
+  font-size: 4rem;
+  line-height: 1.1;
+  text-align: center;
+  font-weight: 900;
+  box-sizing: inherit;
+  text-transform: uppercase;
+  color: white;
+}
+
+.page-title {
+  font-weight: 300;
+  text-align: center;
+  color: white;
 }
