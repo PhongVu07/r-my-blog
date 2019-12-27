@@ -4,6 +4,7 @@ import ContactModal from "../components/ContactModal";
 import ftu from '../img/ftu.jpg'
 import cdschool from '../img/cdschool.jpeg'
 import google from '../img/google.jpg'
+import ContactForm from "../components/ContactForm";
 
 export default function AboutMe() {
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -32,6 +33,9 @@ export default function AboutMe() {
               <li>CSS</li>
               <li>Javascript</li>
               <li>ReactJs</li>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>SQL</li>
             </ul>
           </div>
 
@@ -109,15 +113,7 @@ export default function AboutMe() {
 
         <hr />
 
-        <div className="main-content">
-          <div className="item button-jittery">
-            <button className="contact-me" onClick={() => setIsOpenModal(true)}>
-              Say Hi!
-            </button>
-          </div>
-        </div>
-
-        <ContactModal show={isOpenModal} onHide={() => setIsOpenModal(false)} />
+        <ContactForm />
       </div>
     </div>
   );

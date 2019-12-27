@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/blog.css";
+import SideBar from "../components/SideBar";
 
 export default function Blog() {
   return (

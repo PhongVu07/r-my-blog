@@ -4,9 +4,9 @@ import { FaPlus, FaGithub } from "react-icons/fa";
 import indeed from "../img/indeed.png";
 import moviedb from "../img/moviedb.png"
 import myblog from '../img/myblog.png'
+import freshfarm from '../img/freshfarm.png'
 
 export default function Portfolio() {
-  const [isDisplayed, setIsDisplayed] = useState("none")
 
   return (
     <div className="container-fluid portfolio">
@@ -19,24 +19,19 @@ export default function Portfolio() {
         <div className="row justify-content-between portfolio-item-container">
 
           <div className="col-md-4 col-sm-6 col-6 col-lg-4 portfolio-item">
-            <a
+            <form
               className="portfolio-link"
               data-toggle="modal"
-              href="#portfolioModal1"
+              action="https://objective-spence-5ad112.netlify.com/"
             >
               <div className="portfolio-hover">
                 <div className="portfolio-hover-content">
-                  <FaPlus />
+                  <button className="btn btn-light" action="https://objective-spence-5ad112.netlify.com/">View Live</button>
                 </div>
               </div>
 
               <img className="img-fluid" src={indeed} alt="" />
-            </a>
-
-            {/* <div className="portfolio-description" style={{display:{isDisplayed}}}>
-                <h1>asefwe</h1>
-            </div> */}
-
+            </form>
 
             <div className="portfolio-caption">
               <h4>InDeed</h4>
@@ -55,19 +50,19 @@ export default function Portfolio() {
           </div>
 
           <div className="col-md-4 col-sm-6 col-6 col-lg-4 portfolio-item">
-            <a
+            <form
               className="portfolio-link"
               data-toggle="modal"
-              href="#portfolioModal1"
+              action="https://pensive-poincare-aa6836.netlify.com"
             >
               <div className="portfolio-hover">
                 <div className="portfolio-hover-content">
-                  <FaPlus />
+                  <button className="btn btn-light">View Live</button>
                 </div>
               </div>
 
               <img className="img-fluid" src={moviedb} alt="" />
-            </a>
+            </form>
 
             <form action="https://github.com/phong10119/Moive-DB" className="portfolio-caption">
               <h4>Movie DB</h4>
@@ -86,21 +81,21 @@ export default function Portfolio() {
           </div>
 
           <div className="col-md-4 col-sm-6 col-6 col-lg-4 portfolio-item">
-            <a
+            <form
               className="portfolio-link"
               data-toggle="modal"
-              href="#portfolioModal1"
+              action="anoobcoder.com"
             >
               <div className="portfolio-hover">
                 <div className="portfolio-hover-content">
-                  <FaPlus />
+                  <button className="btn btn-light">View Live</button>
                 </div>
               </div>
 
               <img className="img-fluid" src={myblog} alt="" />
-            </a>
+            </form>
 
-            <form action="anoobcoder.com" className="portfolio-caption">
+            <form action="https://github.com/phong10119/r-my-blog" className="portfolio-caption">
               <h4>A Noob Coder</h4>
               <div className="portfolio-btn-container">
                 <button
@@ -115,6 +110,99 @@ export default function Portfolio() {
               </div>
             </form>
           </div>
+
+          <div className="col-md-4 col-sm-6 col-6 col-lg-4 portfolio-item">
+            <form
+              className="portfolio-link"
+              data-toggle="modal"
+              action="https://freshfarm-ecomerce.netlify.com"
+            >
+              <div className="portfolio-hover">
+                <div className="portfolio-hover-content">
+                  <button className="btn btn-light" type="submit" action="https://freshfarm-ecomerce.netlify.com">View Live</button>
+                </div>
+              </div>
+
+              <img className="img-fluid" src={freshfarm} alt="" />
+            </form>
+
+            <form action="https://github.com/phong10119/r-my-blog" className="portfolio-caption">
+              <h4>Fresh Farm</h4>
+              <div className="portfolio-btn-container">
+                <button
+                  className="portfolio-btn btn1"
+                  data-text="View live"
+                  type="submit"
+                >
+                  <span>
+                    <FaGithub />
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          {/* <div className="col-md-4 col-sm-6 col-6 col-lg-4 portfolio-item">
+            <form
+              className="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal1"
+            >
+              <div className="portfolio-hover">
+                <div className="portfolio-hover-content">
+                  <button className="btn btn-light">View Live</button>
+                </div>
+              </div>
+
+              <img className="img-fluid" src={myblog} alt="" />
+            </form>
+
+            <form action="https://github.com/phong10119/r-my-blog" className="portfolio-caption">
+              <h4>A Noob Coder</h4>
+              <div className="portfolio-btn-container">
+                <button
+                  className="portfolio-btn btn1"
+                  data-text="View live"
+                  type="submit"
+                >
+                  <span>
+                    <FaGithub />
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div className="col-md-4 col-sm-6 col-6 col-lg-4 portfolio-item">
+            <form
+              className="portfolio-link"
+              data-toggle="modal"
+              href="#portfolioModal1"
+            >
+              <div className="portfolio-hover">
+                <div className="portfolio-hover-content">
+                  <button className="btn btn-light">View Live</button>
+                </div>
+              </div>
+
+              <img className="img-fluid" src={myblog} alt="" />
+            </form>
+
+            <form action="https://github.com/phong10119/r-my-blog" className="portfolio-caption">
+              <h4>A Noob Coder</h4>
+              <div className="portfolio-btn-container">
+                <button
+                  className="portfolio-btn btn1"
+                  data-text="View live"
+                  type="submit"
+                >
+                  <span>
+                    <FaGithub />
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div> */}
 
         </div>
       </div>

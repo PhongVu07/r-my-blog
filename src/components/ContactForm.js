@@ -7,7 +7,6 @@ export default function ContactForm() {
         <div className="row mb-4">
           <div className="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
             <h2> Contact Me</h2>
-            <h3>alo alo 1 2 3 4</h3>
           </div>
         </div>
 

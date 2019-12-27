@@ -8,10 +8,9 @@ export default function NaviBar() {
   const [scroll, setScroll] = useState(0);
   const [navClassName, setNavClassName] = useState("navbar navbar-expand-lg");
 
-  // console.log(scroll);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      const scrollCheck = window.scrollY < 30;
+      const scrollCheck = window.scrollY < 50;
       if (scrollCheck !== scroll) {
         setScroll(scrollCheck);
       }
